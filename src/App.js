@@ -7,7 +7,7 @@ import Gallary from './components/Pages/Gallary';
 import Competition from './components/Pages/Competition';
 import Records from './components/Pages/Records';
 import Facts from './components/Pages/Facts';
-import News from './components/Pages/News';
+import News from './components/Pages/NewsPage/News';
 import Contacts from './components/Pages/Contacts';
 import RecordAzia from './components/Pages/RecordsPage/RecordAzia'
 import RecordsWorld from './components/Pages/RecordsPage/RecordsWorld'
@@ -17,7 +17,11 @@ import Psychological from './components/Pages/FactsPage/Psychological'
 import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 import Tactical from './components/Pages/FactsPage/Tactical'
 import WildandSport from './components/Pages/FactsPage/WildandSport'
+import Intervu from './components/Pages/NewsPage/Intervu';
 import './global.css';
+// import Photo from './components/Pages/NewsPage/Photo';
+import Video from './components/Pages/NewsPage/Video';
+import Training from './components/Pages/NewsPage/Training';
 
 function App() {
   return (
@@ -42,6 +46,11 @@ function App() {
             <Route path='/willandsport' element={<WildandSport />} />
             <Route path='/news' element={<News />} />
             <Route path='/contacts' element={<Contacts />} />
+
+            <Route path='/intervu' element={<Intervu />} />
+            {/* <Route path='/photo' element={<Photo />} /> */}
+            <Route path='/video' element={<Video />} />
+            <Route path='/training' element={<Training />} />
           </Routes>
         <Footer />
       </div>

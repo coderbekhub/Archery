@@ -72,7 +72,22 @@ export default function Navbar(props) {
                 </Dropdown>
               </Link>
               </li> */}
-              <li><Link to="/news" className="nav_link">НОВОСТИ</Link></li>
+              <li>
+                <Link to="/news" className="nav_link">
+                <Dropdown isOpen={dropdownOpen2} toggle={toggle2} {...props}>
+                  <DropdownToggle caret className='nav_link'>
+                    НОВОСТИ
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem><Link to='/intervu' className='records'>Интервью</Link></DropdownItem>
+                    {/* <DropdownItem><Link to='/photo' className='records'>Фото</Link></DropdownItem> */}
+                    <DropdownItem><Link to='/video'  className='records'>Видео</Link></DropdownItem>
+                    <DropdownItem><Link to='/training' className='records'>Учебно-тренировичные сборы</Link></DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                </Link>
+              </li>
+
               <li><Link to="/contacts" className="nav_link">КОНТАКТЫ</Link></li>
             </ul>
           </nav>
