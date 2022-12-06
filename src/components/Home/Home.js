@@ -11,8 +11,8 @@ export default function Home() {
     <div>
       <HomeCarousel />
       <NewsSection />
-      {/* <LittleAboutus /> */}
-      {/* <GallerySection /> */}
+      <LittleAboutus />
+      <GallerySection />
       <OurAthletes />
       <GoogleMaps />
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import GalleryPage1 from '../../img/gallerypage1.jpg'
-import GalleryPage2 from '../../img/gallerypage2.jpg'
-import GalleryPage3 from '../../img/gallerypage3.jpg'
-import GalleryPage4 from '../../img/gallerypage4.jpg'
-import GalleryPage5 from '../../img/gallerypage5.jpg'
-import GalleryPage6 from '../../img/gallerypage6.jpg'
-import GalleryPage7 from '../../img/gallerypage7.jpg'
+import GalleryPage1 from '../../img/archerygallery1.jpg'
+import GalleryPage2 from '../../img/archerygallery2.jpg'
+import GalleryPage3 from '../../img/archerygallery3.jpg'
+import GalleryPage4 from '../../img/archerygallery4.jpg'
+import GalleryPage5 from '../../img/archerygallery9.jpg'
+import GalleryPage6 from '../../img/archerygallery6.jpg'
+import GalleryPage7 from '../../img/archerygallery7.jpg'
 import GoogleMaps from '../googleMap/GoogleMaps'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
