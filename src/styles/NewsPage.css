@@ -120,3 +120,73 @@
 }
 
 /* INTERVU STYLE END */
+
+.video_content {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.video_content h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #282229;
+  line-height: 1.3;
+  font-weight: 500;   
+}
+
+.video_content video{
+  width: 500px;
+}
+
+/* TRAINING STYLE START */
+
+.training_content {
+  padding: 40px 0;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.training_content h2 {
+  padding-bottom: 15px;
+  color: #282229;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* .training_img_content {
+  width: 800px;
+  height: 500px;
+  border-image-source: url('../img/trainingbg_border.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 15px;
+} */
+
+.training_img_content img {
+  width: 360px;
+  height: 200px;
+  display: block;
+  border: 15px double #000000b2;
+  padding: 10px;
+  cursor: crosshair;
+  margin-bottom: 15px;
+}
+
+.training_img_content img:hover {
+  width: 365px;
+  height: 205px;
+  border: 17px double #000000b2;
+  padding: 15px;
+  transition: ease-in-out .5s;
+}
+
+.training_photo_date {
+  font-style: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #282229;
+}
+/* TRAINING STYLE END */
