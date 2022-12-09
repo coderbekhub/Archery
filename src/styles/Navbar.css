@@ -83,6 +83,7 @@
   align-items: center;
 }
 
+
 @media (max-width: 990px) {
   .nav_section {
     background: none;

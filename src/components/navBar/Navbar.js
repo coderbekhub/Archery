@@ -73,7 +73,7 @@ export default function Navbar(props) {
               </Link>
               </li> */}
               <li>
-                <Link to="/news" className="nav_link">
+                <Link to="/news" className="nav_link droplink">
                 <Dropdown isOpen={dropdownOpen2} toggle={toggle2} {...props}>
                   <DropdownToggle caret className='nav_link'>
                     НОВОСТИ

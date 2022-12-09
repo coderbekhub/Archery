@@ -173,14 +173,12 @@
   padding: 10px;
   cursor: crosshair;
   margin-bottom: 15px;
+  transform: scale(1);
 }
 
 .training_img_content img:hover {
-  width: 365px;
-  height: 205px;
-  border: 17px double #000000b2;
-  padding: 15px;
-  transition: ease-in-out .5s;
+  transform: scale(1.1);
+  transition: all 1s ease;
 }
 
 .training_photo_date {
