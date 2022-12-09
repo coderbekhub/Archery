@@ -51,6 +51,12 @@
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
+  cursor: pointer;
+}
+
+.competition_info h2:hover {
+  color: rgb(26, 122, 90);
+  transition: all .5s ease;
 }
 
 .competition_info span:nth-child(2) {
@@ -58,10 +64,33 @@
   color: #aaa;
   margin-bottom: 10px;
   font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.competition_info span:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('../img/date_time.png');
+  margin-right: 5px;
+  opacity: .4;
+}
+
+.competition_info span:nth-child(2):hover {
+  color: #000;
+  transition: all .5s ease;
 }
 
 .competition_info span:nth-child(3) {
   display: block;
   color: #aaa;
   font-size: 14px;
+  cursor: pointer;
+}
+.competition_info span:nth-child(3):hover {
+  color: #000;
+  transition: all .5s ease;
 }
