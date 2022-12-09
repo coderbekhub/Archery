@@ -31,7 +31,7 @@ export default function Header() {
               <i className='bx bx-search-alt search_icon'></i>
             </span>
             <h3 className='header_address'>Город Ташкент, Чиланзарский район, улица Фозилтепа, дом 38 
-              <i className='bx bx-location-plus location_icon'></i>
+              {/* <i className='bx bx-location-plus location_icon'></i> */}
             </h3>
             <div className='lang_content2'>
               <a href="uz">

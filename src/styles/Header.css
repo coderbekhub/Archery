@@ -55,10 +55,23 @@
   text-align: right;
 }
 
-.location_icon {
+.header_address::after {
+  content: '';
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+  background: url('../img/location_icon.svg');
+  margin-right: 5px;
+  opacity: .4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+}
+
+/* .location_icon {
   font-size: 30px;
   color: red;
-}
+} */
 
 .lang_icon {
   margin-right: 4px;
