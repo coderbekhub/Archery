@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../../styles/News.css'
 import News_img1 from '../../img/news_img1.jpg'
 import News_img2 from '../../img/news_img2.jpg'
 import News_img4 from '../../img/news_img4.jpg'
 import News_img5 from '../../img/news_img5.jpg'
-
+import { Link } from 'react-router-dom';
 
 export default function NewsSection() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
   return (
     <>
       <section className='news_section'>
@@ -44,7 +46,7 @@ export default function NewsSection() {
               <p>Жорий йилнинг 22-26 август кунлари пойтахтимиздаги Олимпия захиралар коллежида спортнинг Камондан отиш тури бўйича профессионал спортчилар ўртасида</p>
             </div>
           </div>
-          <a className='all_news' href="#">все новости</a>
+          <Link to='/allnews' className='all_news' href="#">все новости</Link>
         </div>
       </section>
     </>

@@ -133,6 +133,7 @@
   color: #282229;
   line-height: 1.3;
   font-weight: 500;   
+  width: auto;
 }
 
 .video_content video{
@@ -154,16 +155,6 @@
   font-weight: bold;
   line-height: 1.3;
 }
-
-/* .training_img_content {
-  width: 800px;
-  height: 500px;
-  border-image-source: url('../img/trainingbg_border.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 15px;
-} */
 
 .training_img_content img {
   width: 360px;

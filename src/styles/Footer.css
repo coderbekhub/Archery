@@ -65,8 +65,14 @@
   font-size: 14px;
   color: #ffffff99;
 }
-
-
+.created {
+  font-size: 14px;
+  color: #ffffffb2;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
 
 @media (max-width: 753px) {
   .footer_infos .phone_num {

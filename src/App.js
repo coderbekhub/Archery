@@ -18,10 +18,10 @@ import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 import Tactical from './components/Pages/FactsPage/Tactical'
 import WildandSport from './components/Pages/FactsPage/WildandSport'
 import Intervu from './components/Pages/NewsPage/Intervu';
-import './global.css';
-// import Photo from './components/Pages/NewsPage/Photo';
 import Video from './components/Pages/NewsPage/Video';
 import Training from './components/Pages/NewsPage/Training';
+// import Photo from './components/Pages/NewsPage/Photo';
+import './global.css';
 
 function App() {
   return (
@@ -51,6 +51,8 @@ function App() {
             {/* <Route path='/photo' element={<Photo />} /> */}
             <Route path='/video' element={<Video />} />
             <Route path='/training' element={<Training />} />
+            <Route path='/allnews' element={<News />} />
+            <Route path='/seemore' element={<Gallary />} />
           </Routes>
         <Footer />
       </div>

@@ -5,6 +5,7 @@ import Athletes_img3 from '../../img/athletes_img3.jpg'
 import Athletes_img4 from '../../img/athletes_img4.jpg'
 import Athletes_img5 from '../../img/athletes_img5.jpg'
 import Athletes_img6 from '../../img/athletes_img6.png'
+import { Link } from 'react-router-dom';
 
 export default function OurAthletes() {
   return (
@@ -44,6 +45,7 @@ export default function OurAthletes() {
               </div>
             </div>
           </div>
+          <Link to='/seemore' className='see_more' href="#">see more</Link>
         </div>
       </section>
     </>

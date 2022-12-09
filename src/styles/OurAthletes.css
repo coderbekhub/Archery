@@ -52,3 +52,20 @@
   margin-bottom: 60px;
   margin-top: 20px;
 }
+
+.see_more {
+  width: 172px;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  background: repeating-linear-gradient(to top right, rgba(145, 0, 99, 0.4) 0%, rgba(212, 42, 42, 0.4) 99.7%) #ed1a33;
+  border-radius: 1px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
