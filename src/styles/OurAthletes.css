@@ -29,9 +29,16 @@
 .athletes_info img {
   width: 300px;
   height: 400px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   margin-right: 40px;
-} 
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.athletes_info img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
 
 .athletes_info h3 {
   color: #000;

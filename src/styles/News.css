@@ -30,6 +30,13 @@
   height: 204px;
   cursor: pointer;
   margin-bottom: 30px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.news_info img:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
 }
 
 .news_info span {
