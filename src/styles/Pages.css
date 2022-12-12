@@ -21,6 +21,7 @@
   font-size: 20px;
   margin-bottom: 15px;
   color: #282229;
+  width: auto;
 }
 
 .about_federation p:nth-child(3) {
@@ -33,7 +34,7 @@
 }
 
 .about_federation hr {
-  width: 740px;
+  width: 100%;
 }
 
 .about_federation p:nth-child(5) {
@@ -60,7 +61,8 @@
 }
 
 .federation_list h2 {
-  width: 400px;
+  width: auto;
+  text-align: center;
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 900;
@@ -83,7 +85,8 @@
 }
 
 .federation_text {
-  width: 600px;
+  width: auto;
+  text-align: center;
   color: #303030;
   line-height: 1.7;
   display: block;
@@ -93,13 +96,13 @@
 .federation_male {
   display: block;
   margin: 0 auto;
-  width: 660px;
   margin-top: 20px;
+  width: 600px;
 }
 .federation_fmale {
   display: block;
   margin: 0 auto;
-  width: 660px;
+  width: 600px;
   margin-top: 20px;
 }
 
@@ -568,6 +571,7 @@
 }
 
 .contact_content p {
+  width: auto;
   color: #303030;
   line-height: 1.7;
   font-weight: 500;
@@ -590,7 +594,6 @@
   font-family: 'Book Antiqua', palatino;
 }
 
-
 .contact_content a:nth-child(3) span {
   margin-right: 20px;
 }
@@ -599,11 +602,7 @@
   margin-right: 20px;
 }
 .contact_content a:nth-child(3) {
-  display: block;
-}
-
-.contact_content a:nth-child(4) {
-  display: block;
+  display: inline-block;
 }
 
 .contact_content a:nth-child(5) span {
@@ -611,5 +610,92 @@
 }
 
 .contact_content a:nth-child(5) {
-  color: #3498db;
+  color: #303030;
 }
+
+@media (max-width: 651px) {
+  .contact_content {
+    text-align: center;
+    width: auto;
+  }
+  .contact_content p {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 651px) {
+  .contact_content {
+    text-align: center;
+    width: auto;
+  }
+  .contact_content p {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* FEDERATION MEDIA STYLE START */
+
+@media (max-width: 790px) {
+  .about_federation {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about_federation hr {
+    width: auto;
+    display: block;
+  }
+  .about_federation h3 {
+    width: auto;
+    display: block;
+  }
+
+  .about_federation p:nth-child(3) {
+    width: auto;
+    text-align: left;
+  }
+  .about_federation p:nth-child(4) {
+    width: auto;
+    text-align: left;
+  }
+  .about_federation p:nth-child(5) {
+    width: auto;
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .federation_list li {
+    width: auto;
+    display: block;
+  }
+
+  .federation_text {
+    width: auto;
+    display: block;
+    text-align: left;
+  }
+
+  .about_federation {
+    padding-top: 0px;
+  }
+
+  .federation_male {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+  .federation_fmale {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+  
+}
+
+/* FEDERATION MEDIA STYLE END */

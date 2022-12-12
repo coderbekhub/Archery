@@ -24,13 +24,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .athletes_info img {
   width: 300px;
   height: 400px;
   margin-bottom: 3px;
-  margin-right: 40px;
   cursor: pointer;
   transform: scale(1);
 }
@@ -68,4 +68,29 @@
   text-transform: capitalize;
   margin-bottom: 50px;
   margin-top: -60px;
+}
+
+@media (max-width: 325px) {
+  .athletes_title {
+    width: auto;
+    text-align: center;
+  }
+
+  .athletes_text {
+    width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .athletes_info img {
+    width: 250px;
+  }
+  .athletes_info h3 {
+    width: auto;
+    text-align: center;
+  }
+  
+  .see_more {
+    margin-top: -90px;
+  }
 }
