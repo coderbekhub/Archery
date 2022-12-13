@@ -13,7 +13,7 @@ export default function Training() {
             <div className='training_img_content'>
               <img src={TrainingImg} alt="" />
             </div>
-              <span className='training_photo_date'>the time the information was posted</span>
+              <span className='training_photo_date'>2022-12-12</span>
           </div>
         </div>
       </div>

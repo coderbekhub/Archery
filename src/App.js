@@ -53,6 +53,7 @@ function App() {
             <Route path='/training' element={<Training />} />
             <Route path='/allnews' element={<News />} />
             <Route path='/seemore' element={<Gallary />} />
+            <Route path='/moresee' element={<Video />} />
           </Routes>
         <Footer />
       </div>

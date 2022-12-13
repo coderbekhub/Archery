@@ -56,7 +56,85 @@
 
 .news_hr {
   width: 100%;
-  border: #000 dashed 1px;
+  border: #000 solid 1px;
+}
+
+@media (max-width: 720px) {
+  .young_snipers a {
+    width: auto;
+    display: block;
+  }
+  .young_snipers {
+    width: auto;
+  }
+
+  .young_sniper {
+    width: auto;
+  }
+
+  .newspage_content {
+    width: auto;
+    margin: 0 auto;
+    display: block; 
+  }
+
+  .news_hr {
+    width: auto;
+  }
+
+  .newspage_title {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .newspage_title {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .newsflex img {
+    margin-right: 0px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .young_snipers a {
+    text-align: center;
+  }
+
+  .newsflex div a {
+    padding-bottom: 20px;
+  }
+
+  .newsflex div p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .newspage_title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .newsflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    text-align: center;
+  }
+
+  .young_snipers a {
+    padding-top: 10px;
+  }
+
+  .newsflex div a {
+    padding-bottom: 20px;
+  }
+
 }
 
 /* NEWS STYLE END */
@@ -119,6 +197,52 @@
   color: #000;
 }
 
+@media (max-width: 770px) {
+  .intervu_title {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+  }
+
+  .intervu_info p {
+    width: auto;
+  }
+
+  .intervu_hr {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .intervu_content {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+@media (max-width: 530px) {
+  .intervu_content {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intervu_content img {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .intervu_info a {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
 /* INTERVU STYLE END */
 
 .video_content {
@@ -139,6 +263,38 @@
 .video_content video{
   width: 500px;
 }
+
+@media (max-width: 540px) {
+  .video_content h2 {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .video_content video {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .video_content h2 {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .video_content video {
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
 
 /* TRAINING STYLE START */
 
@@ -197,12 +353,16 @@
 }
 
 @media (max-width: 400px) {
+  .training_content h2 {
+    font-size: 20px;
+  }
   .training_img_content img {
     width: 290px;
     height: 200px;
     display: block;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
 
