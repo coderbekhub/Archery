@@ -23,6 +23,7 @@ export default function Navbar(props) {
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_nav')
   }
+
   return (
     <>
       <div className='container burger_lang'>
@@ -73,9 +74,9 @@ export default function Navbar(props) {
               </Link>
               </li> */}
               <li>
-                <Link to="/news" className="nav_link droplink">
-                <Dropdown isOpen={dropdownOpen2} toggle={toggle2} {...props}>
-                  <DropdownToggle caret className='nav_link'>
+                <Link to="/news" className="nav_link ">
+                <Dropdown className='droplink' isOpen={dropdownOpen2} toggle={toggle2} {...props}>
+                  <DropdownToggle caret className='nav_link droplink'>
                     НОВОСТИ
                   </DropdownToggle>
                   <DropdownMenu>
@@ -87,7 +88,6 @@ export default function Navbar(props) {
                 </Dropdown>
                 </Link>
               </li>
-
               <li><Link to="/contacts" className="nav_link" onClick={showNavbar}>КОНТАКТЫ</Link></li>
             </ul>
           </nav>

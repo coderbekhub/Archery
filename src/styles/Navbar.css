@@ -102,7 +102,7 @@
     min-height: 100vh;
     background: #003f63;
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateX(-100vh);
     z-index: 1000;
   }
 
@@ -119,7 +119,15 @@
 
 @media (max-width: 900px) {
   .nav_burger {
-    position: relative;
-    top: -426px;
+    position: fixed;
+    top: -488px;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav_burger {
+    position: fixed;
+    top: -488px;
+    margin-bottom: 20px;
   }
 }
