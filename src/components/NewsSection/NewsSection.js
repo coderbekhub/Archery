@@ -5,10 +5,23 @@ import News_img2 from '../../img/news_img2.jpg'
 import News_img4 from '../../img/news_img4.jpg'
 import News_img5 from '../../img/news_img5.jpg'
 import { Link } from 'react-router-dom';
+import { ARCHERY_LANGUAGE } from '../../tools/constants'
+import { useEffect } from 'react'
+import { getLanguage, getText } from '../../Locales'
 
 export default function NewsSection() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen((prevState) => !prevState);
+
+  const changeLanguage = (e) => {
+    localStorage.setItem(ARCHERY_LANGUAGE, e)
+    document.location.reload(true)
+  }
+
+  useEffect(() => {
+    // changeLanguage()
+  }, [])
+
   return (
     <>
       <section className='news_section'>

@@ -1,7 +1,6 @@
 .about_content {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   margin-bottom: 50px;
 }
 
@@ -50,7 +49,6 @@
 
 .about_info {
   margin-right: 30px;
-  /* margin-bottom: 40px; */
 }
 
 .about_info img {

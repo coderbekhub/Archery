@@ -3,6 +3,9 @@ import '../../styles/Navbar.css'
 import '../../styles/Header.css'
 import '../headerSection/Header';
 import { Link } from 'react-router-dom'
+import { ARCHERY_LANGUAGE } from '../../tools/constants'
+import { getLanguage, getText } from '../../Locales'
+import { useEffect } from 'react'
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useRef } from 'react'
@@ -23,6 +26,16 @@ export default function Navbar(props) {
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_nav')
   }
+
+  const changeLanguage = (e) => {
+    localStorage.setItem(ARCHERY_LANGUAGE, e)
+    document.location.reload(true)
+  }
+
+  useEffect(() => {
+    // changeLanguage()
+  }, [])
+
 
   return (
     <>
@@ -74,10 +87,11 @@ export default function Navbar(props) {
               </Link>
               </li> */}
               <li>
-                <Link to="/news" className="nav_link ">
                 <Dropdown className='droplink' isOpen={dropdownOpen2} toggle={toggle2} {...props}>
                   <DropdownToggle caret className='nav_link droplink'>
+                  <Link to="/news" className="nav_link ">
                     НОВОСТИ
+                  </Link>
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem><Link to='/intervu' className='records' onClick={showNavbar}>Интервью</Link></DropdownItem>
@@ -86,7 +100,6 @@ export default function Navbar(props) {
                     <DropdownItem><Link to='/training' className='records' onClick={showNavbar}>Учебно-тренировичные сборы</Link></DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-                </Link>
               </li>
               <li><Link to="/contacts" className="nav_link" onClick={showNavbar}>КОНТАКТЫ</Link></li>
             </ul>
