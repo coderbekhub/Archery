@@ -1,0 +1,96 @@
+.athletes_title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.athletes_text {
+  margin-bottom: 50px;
+  color: #5c5c5c;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+}
+
+.athletes_content {
+  margin-bottom: 100px;
+}
+
+.athletes_infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.athletes_info img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.athletes_info img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+.athletes_info h3 {
+  color: #000;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.see_more {
+  width: 172px;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  background: repeating-linear-gradient(to top right, rgba(145, 0, 99, 0.4) 0%, rgba(212, 42, 42, 0.4) 99.7%) #ed1a33;
+  border-radius: 1px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
+
+@media (max-width: 325px) {
+  .athletes_title {
+    width: auto;
+    text-align: center;
+  }
+
+  .athletes_text {
+    width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .athletes_info img {
+    width: 250px;
+  }
+  .athletes_info h3 {
+    width: auto;
+    text-align: center;
+  }
+  
+  .see_more {
+    margin-top: -90px;
+  }
+}

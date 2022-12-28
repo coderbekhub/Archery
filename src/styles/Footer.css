@@ -1,0 +1,136 @@
+.top_section {
+  background-color: #003f63;
+  padding: 40px 0;
+}
+
+.to_top {
+  font-size: 50px;
+  color: aliceblue;
+  background-color: blueviolet;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer_section {
+  background: linear-gradient(rgba(0, 77, 122, 0.96), rgba(0, 77, 122, 0.96)), url('../img/footer_bgimg.jpg') left 50% top 50% / cover no-repeat;
+  padding: 70px 0;
+  width: 100%;
+  height: 392px;
+}
+
+.footer_sites {
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.footer_imgs img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.bank_brand {
+  width: 180px;
+  height: 87px;
+}
+
+.footer_infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_infos .phone_num {
+  font-size: 14px;
+  margin-right: 143px;
+  line-height: 1.2;
+  color: #ffffff99;
+}
+
+.footer_infos h2 {
+  font-size: 14px;
+  color: #ffffff99;
+  margin-right: 143px;
+  padding-top: 40px;
+}
+
+.footer_infos .gmail {
+  font-size: 14px;
+  color: #ffffff99;
+}
+.created {
+  font-size: 14px;
+  color: #ffffffb2;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 753px) {
+  .footer_infos .phone_num {
+    margin-right: 0px;
+  }
+
+  .footer_infos h2 {
+    margin-right: 0px;
+    padding-top: 40px;
+  }
+
+  .footer_infos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* FOOTER MEDIA START WIDTH 640px */
+
+@media (max-width: 640px) {
+  .footer_infos .phone_num {
+    margin-right: 0px;
+  }
+
+  .footer_infos h2 {
+    font-size: 14px;
+    color: #ffffff99;
+    margin-right: 0px;
+    padding-top: 10px;
+  }
+
+  .footer_infos {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 591px) {
+  .footer_infos .phone_num {
+    margin-right: 0px;
+  }
+
+  .footer_infos h2 {
+    margin-right: 0px;
+    padding-top: 40px;
+  }
+
+  .footer_infos {
+    text-align: center;
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .footer_infos h2 {
+    padding-top: 10px;
+    width: auto;
+    margin-right: 0px;
+  }
+
+}

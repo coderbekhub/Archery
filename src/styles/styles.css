@@ -1,0 +1,25 @@
+.swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  padding-top: 100px;
+}
+
+.gallery_img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.mySwiper {
+  padding-top: 100px;
+}
+
+.carousel_section {
+  background-color: #999999b2;
+}
