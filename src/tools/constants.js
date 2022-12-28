@@ -1,0 +1,1 @@
+export const ARCHERY_LANGUAGE = 'ARCHERY_LANGUAGE'

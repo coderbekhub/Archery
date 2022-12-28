@@ -1,0 +1,21 @@
+export const en = {
+  'site_name': 'Archery Federation of Uzbekistan',
+  'header_address': '38, Foziltepa street, Chilonzor district, Tashkent city',
+  'nav_home': 'Home',
+  'nav_ourFederation': 'OUR FEDERATION',
+  'nav_gallery': 'GALLERY',
+  'nav_competition': 'COMPETITION',
+  'nav_news': 'NEWS',
+  'nav_interview': 'Interview',
+  'nav_video': 'Video',
+  'nav_TrainingCamps': 'Training camps',
+  'nav_contacts': 'CONTACTS',
+  'heroCarousel1': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamdictum mattis velit, sit amet faucibus felis iaculis nec. Nullalaoreet justo vitae porttitor porttitor. Suspendisse in sem justo.',
+  'heroCarousel2': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamdictum mattis velit, sit amet faucibus felis iaculis nec. Nullalaoreet justo vitae porttitor porttitor. Suspendisse in sem justo.',
+  'heroCarousel3': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamdictum mattis velit, sit amet faucibus felis iaculis nec. Nullalaoreet justo vitae porttitor porttitor. Suspendisse in sem justo.',
+  'hero_heading1': 'Slide 1',
+  'hero_heading2': 'Slide 2',
+  'hero_heading3': 'Slide 3',
+  'news': 'NEWS',
+  
+}
