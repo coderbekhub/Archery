@@ -1,22 +1,22 @@
 import React from 'react'
 import '../../styles/Header.css'
 import Brand from '../../img/archery.png'
-import ruIcon from '../../img/ruicon.png'
-import uzIcon from '../../img/uzicon.png'
-import enIcon from '../../img/enicon.png'
-import { useEffect } from 'react'
-import { ARCHERY_LANGUAGE } from '../../tools/constants'
-import { getLanguage, getText } from '../../Locales'
+// import ruIcon from '../../img/ruicon.png'
+// import uzIcon from '../../img/uzicon.png'
+// import enIcon from '../../img/enicon.png'
+// import { useEffect } from 'react'
+// import { ARCHERY_LANGUAGE } from '../../tools/constants'
+// import { getLanguage, getText } from '../../Locales'
 
 export default function Header() {
-  const changeLanguage = (e) => {
-    localStorage.setItem(ARCHERY_LANGUAGE, e)
-    document.location.reload(true)
-  }
+  // const changeLanguage = (e) => {
+  //   localStorage.setItem(ARCHERY_LANGUAGE, e)
+  //   document.location.reload(true)
+  // }
 
-  useEffect(() => {
-    // changeLanguage()
-  }, [])
+  // useEffect(() => {
+  //   changeLanguage()
+  // }, [])
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function Header() {
               Город Ташкент, Чиланзарский район, улица Фозилтепа, дом 38
             </h3>
 
-              <ul className='lang_list'>
+              {/* <ul className='lang_list'>
                 <li className='lang_item lang_wrap'>
                   <h5>
                     {getLanguage() === 'en' ? <><img src={enIcon} alt="" /> English</> : getLanguage() === 'uz' ? <><img src={uzIcon} alt="" /> O'zbek</> : <><img src={ruIcon} alt="" /> Русский</>}
@@ -51,7 +51,7 @@ export default function Header() {
                     <p onClick={() => changeLanguage('en')}><i><img src={enIcon} alt="..." /></i> English</p>
                   </div>
                 </li>
-              </ul>
+              </ul> */}
 
             {/* <div className='lang_wrap'>
                 <h5>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+// import React, { useState, useRef } from 'react'
 import '../../styles/HomeCarousel.css'
 import '../../global.css'
 import "swiper/css";
@@ -6,19 +6,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Parallax, Pagination, Navigation } from "swiper";
-import { ARCHERY_LANGUAGE } from '../../tools/constants'
-import { getLanguage, getText } from '../../Locales'
-import { useEffect } from 'react'
+// import { ARCHERY_LANGUAGE } from '../../tools/constants'
+// import { getLanguage, getText } from '../../Locales'
+// import { useEffect } from 'react'
 
 export default function HomeCarousel() {
-  const changeLanguage = (e) => {
-    localStorage.setItem(ARCHERY_LANGUAGE, e)
-    document.location.reload(true)
-  }
+  // const changeLanguage = (e) => {
+  //   localStorage.setItem(ARCHERY_LANGUAGE, e)
+  //   document.location.reload(true)
+  // }
 
-  useEffect(() => {
-    // changeLanguage()
-  }, [])
+  // useEffect(() => {
+  //   changeLanguage()
+  // }, [])
 
   return (
     <>
