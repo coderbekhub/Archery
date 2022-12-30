@@ -14,14 +14,15 @@ import RecordsWorld from './components/Pages/RecordsPage/RecordsWorld'
 import RecordUzb from './components/Pages/RecordsPage/RecordUzb'
 import RecordStandards from './components/Pages/RecordsPage/RecordStandards'
 import Psychological from './components/Pages/FactsPage/Psychological'
-import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 import Tactical from './components/Pages/FactsPage/Tactical'
 import WildandSport from './components/Pages/FactsPage/WildandSport'
 import Intervu from './components/Pages/NewsPage/Intervu';
 import Video from './components/Pages/NewsPage/Video';
 import Training from './components/Pages/NewsPage/Training';
+// import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 // import Photo from './components/Pages/NewsPage/Photo';
 import './global.css';
+// import './i18next'
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
 
             <Route path='/psychological' element={<Psychological />} />
             <Route path='/tactical' element={<Tactical />} />
-            <Route path='/physicaltraining' element={<Physicaltraining /> } />
+            {/* <Route path='/physicaltraining' element={<Physicaltraining /> } /> */}
             <Route path='/willandsport' element={<WildandSport />} />
             <Route path='/news' element={<News />} />
             <Route path='/contacts' element={<Contacts />} />

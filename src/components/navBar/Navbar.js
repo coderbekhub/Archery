@@ -3,11 +3,9 @@ import '../../styles/Navbar.css'
 import '../../styles/Header.css'
 import '../headerSection/Header';
 import { Link } from 'react-router-dom'
-import { ARCHERY_LANGUAGE } from '../../tools/constants'
-import { getLanguage, getText } from '../../Locales'
-import { useEffect } from 'react'
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
+// FaTimes
 import { useRef } from 'react'
 import {
   Dropdown,
@@ -17,8 +15,8 @@ import {
 } from 'reactstrap';
 
 export default function Navbar(props) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const toggle = () => setDropdownOpen((prevState) => !prevState);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const toggle2 = () => setDropdownOpen2((prevState) => !prevState);
 
@@ -26,16 +24,6 @@ export default function Navbar(props) {
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_nav')
   }
-
-  const changeLanguage = (e) => {
-    localStorage.setItem(ARCHERY_LANGUAGE, e)
-    document.location.reload(true)
-  }
-
-  useEffect(() => {
-    // changeLanguage()
-  }, [])
-
 
   return (
     <>
@@ -87,9 +75,9 @@ export default function Navbar(props) {
               </Link>
               </li> */}
               <li>
-                <Dropdown className='droplink' isOpen={dropdownOpen2} toggle={toggle2} {...props}>
-                  <DropdownToggle caret className='nav_link droplink'>
-                  <Link to="/news" className="nav_link ">
+                <Dropdown className='' isOpen={dropdownOpen2} toggle={toggle2} {...props}>
+                  <DropdownToggle caret className=''>
+                  <Link to="/news" className="drop">
                     НОВОСТИ
                   </Link>
                   </DropdownToggle>

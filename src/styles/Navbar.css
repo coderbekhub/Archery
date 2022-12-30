@@ -19,6 +19,13 @@
   transform: scale(1);
 }
 
+.drop {
+  color: #fff;
+}
+.drop:hover {
+  color: #fff;
+}
+
 .nav_link:hover {
   color: #d5d4d4;
   transition: .5s;

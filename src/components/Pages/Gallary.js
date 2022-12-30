@@ -6,7 +6,6 @@ import GalleryPage4 from '../../img/archerygallery4.jpg'
 import GalleryPage5 from '../../img/archerygallery9.jpg'
 import GalleryPage6 from '../../img/archerygallery6.jpg'
 import GalleryPage7 from '../../img/archerygallery7.jpg'
-import GoogleMaps from '../googleMap/GoogleMaps'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -64,6 +63,4 @@ export default function Gallary() {
       </section>
     </>
   );
-
-<GoogleMaps />
 }

@@ -1,6 +1,6 @@
 import { ARCHERY_LANGUAGE } from '../tools/constants'
 import { en } from '../Locales/Eng'
-import { uz } from '../Locales/Uz'
+import { uz } from './Uz'
 import { ru } from '../Locales/Ru'
 
 export const getLanguage = () => {
