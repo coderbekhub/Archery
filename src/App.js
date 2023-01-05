@@ -1,3 +1,4 @@
+import './global.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
@@ -21,8 +22,7 @@ import Video from './components/Pages/NewsPage/Video';
 import Training from './components/Pages/NewsPage/Training';
 // import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 // import Photo from './components/Pages/NewsPage/Photo';
-import './global.css';
-// import './i18next'
+// import { useTranslation } from 'react-i18next';
 
 function App() {
   return (
