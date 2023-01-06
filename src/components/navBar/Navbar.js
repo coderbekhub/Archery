@@ -75,8 +75,8 @@ export default function Navbar(props) {
               </Link>
               </li> */}
               <li>
-                <Dropdown className='' isOpen={dropdownOpen2} toggle={toggle2} {...props}>
-                  <DropdownToggle caret className=''>
+                <Dropdown isOpen={dropdownOpen2} toggle={toggle2} {...props}>
+                  <DropdownToggle caret>
                   <Link to="/news" className="drop">
                     НОВОСТИ
                   </Link>

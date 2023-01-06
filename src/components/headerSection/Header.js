@@ -1,13 +1,15 @@
 import React from 'react'
 import '../../styles/Header.css'
 import Brand from '../../img/archery.png'
-import ruIcon from '../../img/ruicon.png'
-import uzIcon from '../../img/uzicon.png'
-import enIcon from '../../img/enicon.png'
-// import { useEffect } from 'react'
+// import ruIcon from '../../img/ruicon.png'
+// import uzIcon from '../../img/uzicon.png'
+// import enIcon from '../../img/enicon.png'
+import GlobeIcon from '../../img/globe.svg'
+import { useEffect } from 'react'
 // import { ARCHERY_LANGUAGE } from '../../tools/constants'
 // import { getLanguage, getText } from '../../Locales'
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next'
 
 export default function Header() {
   const {t} = useTranslation()
@@ -27,12 +29,19 @@ export default function Header() {
       name: 'English',
       country_code: 'gb'
     }
-    
   ]
-  const myChangeLanguage = (e) => {
+
+  useEffect(() => {
+    document.title = t('document_title')
+  },[t]) 
+
+  // const GlobeIcon = () => (
+  //   <i class="bi bi-globe"></i>
+  // )
+  // const myChangeLanguage = (e) => {
     // localStorage.setItem(ARCHERY_LANGUAGE, e)
     // document.location.reload(true)
-  }
+  // }
 
   // useEffect(() => {
     
@@ -49,15 +58,14 @@ export default function Header() {
                   <img className='brand' src={Brand} alt="site brand" />
                 </a>
                   <h2 className='site_name'>{t('site_name')}</h2>
-                  {/* Федерация стрельбы из лука Узбекистана */}
               </div>
             </div>
             <input className='header_input' placeholder="поиск по сайту" type="search" name="search"  />
             <span>
               <i className='bx bx-search-alt search_icon'></i>
             </span>
-            <h3 className='header_address'> 
-              Город Ташкент, Чиланзарский район, улица Фозилтепа, дом 38
+            <h3 className='header_address'>
+              {t('header_address')}
             </h3>
 
               {/* <ul className='lang_list'> */}
@@ -74,19 +82,19 @@ export default function Header() {
                 {/* </li> */}
               {/* </ul> */}
 
-              <div className="dropdown">
-                <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Select Language
+              <div className="dropdown dropdown2 ">
+                <button className="btn btn-link dropdown-toggle drop_toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img className='globe_icon' src={GlobeIcon} alt="..." />
                 </button>
                 <ul className="dropdown-menu">
                   {language.map(({code, name, country_code}) => (
-                    <li key={country_code}>
-                      <button className='dropdown-item'>{name}</button>
+                    <li className='menu_list' key={country_code}>
+                      <button className='dropdown-item' onClick={() => i18next.changeLanguage(code)}>
+                        <span className={`flag-icon flag-icon-${country_code}`}></span>
+                        {name}
+                      </button>
                     </li>
                   ))}
-                  {/* <li><a className="dropdown-item" href="#">O'zbek</a></li>
-                  <li><a className="dropdown-item" href="#">Русский</a></li>
-                  <li><a className="dropdown-item" href="#">English</a></li> */}
                 </ul>
               </div>
           </div>
