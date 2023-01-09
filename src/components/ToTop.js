@@ -5,7 +5,7 @@ export default function ToTop() {
     <>
       <section className='top_section'>
           <div className="container">
-            <a href="#">
+            <a href="#" className='text-decoration-none'>
               <i className='bx bx-arrow-to-top bx-fade-up bx-flip-horizontal to_top'></i>
             </a>
           </div>

@@ -68,6 +68,11 @@
   text-transform: capitalize;
   margin-bottom: 50px;
   margin-top: -60px;
+  text-decoration: none;
+}
+
+.see_more:hover {
+  color: #fff;
 }
 
 @media (max-width: 325px) {

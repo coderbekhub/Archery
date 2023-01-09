@@ -6,7 +6,6 @@ import TeamCollective3 from '../../img/team_collective3.jpg'
 import Download from '../../img/download.svg'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-// import i18next from 'i18next'
 
 export default function GallerySection() {
   const {t} = useTranslation()
