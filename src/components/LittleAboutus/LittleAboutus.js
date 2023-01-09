@@ -5,8 +5,29 @@ import ArcheryCenter from '../../img/archerycentre.jpg'
 import AboutImg1 from '../../img/about_img1.jpg'
 import AboutImg2 from '../../img/about_img2.jpg'
 import AboutImg3 from '../../img/about_img3.jpg'
+import i18next, { t } from 'i18next'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
 
 export default function LittleAboutus() {
+  const {t} = useTranslation()
+  const language = [
+    {
+      code: 'uz',
+      name: 'O‘zbek',
+      country_code: 'uz'
+    },
+    {
+      code: 'ru',
+      name: 'Русский',
+      country_code: 'ru'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb'
+    }
+  ]
   return (
     <>
       <section className='about_section'>
@@ -14,10 +35,10 @@ export default function LittleAboutus() {
           <div className='about_content'>
             <img src={ArcheryCenter} alt="ArcheryCenter" />
             <div className='about_content2'>
-              <h2>Немного о нас</h2>
-              <p className='about_text'>Стрельба из лука – олимпийский вид спорта, в котором спортсмены соревнуются в точности стрельбы из лука. Победителем в стрельбе из лука является спортсмен или команда, которая наберёт больше очков, согласно правилам соревнований. Соревнования по стрельбе из лука проводятся как между мужчинами, так и между женщинами. </p>
+              <h2> {t('aboutTitle')} </h2>
+              <p className='about_text'> {t('aboutText')} </p>
               <p className='about_text2'>
-                Соревнования по стрельбе из лука проводятся как на открытом воздухе, так и в помещении. Стрельба на соревнованиях ведется сериями по 3 или 6 стрел.
+                {t('aboutText2')}
               </p>
             </div>
           </div>
@@ -25,21 +46,21 @@ export default function LittleAboutus() {
           <div className='about_infos'>
             <div className='about_info'>
               <img src={AboutImg1} alt="img" />
-              <h2>Правила стрельбы из лука</h2>
-              <p className='about_info-text'>В помещении стрельба ведется с расстояний в 18, 30 или 50 метров (для мужчин и женщин). На открытом воздухе расстояние до мишеней составляет 30, 50, 70 и 90 метров для мужчин и 30, 50, 60 и 70 метров для женщин. На Олимпийских играх стрельба из лука ведется только с расстояния 70 метров.</p> <br />
-              <p className='about_info-text'>Соревнования по стрельбе из лука проводятся как на открытом воздухе, так и в помещении. Стрельба на соревнованиях ведется сериями по 3 или 6 стрел. По стандартам FITA на серию из 3 стрел даётся 2 минуты, а на серию из 6 стрел 4 минуты.</p>
+              <h2>{t('aboutRules')}</h2>
+              <p className='about_info-text'>{t('aboutInfoText')}</p> <br />
+              <p className='about_info-text'>{t('aboutInfoText2')}</p>
             </div>
             <div className='about_info'>
               <img src={AboutImg2} alt="img" />
-              <h2>Правила стрельбы из лука</h2>
-              <p className='about_info-text'> <strong>Стрельба из лука</strong> — это искусство, практика, или навык метания стрелы с использованием лука. Она исторически использовалась для охоты, борьбы и войны. Однако, в наше время, ее основное назначение — развлечение людей. Того, кто практикует стрельбу из лука, как правило, называют «стрелками» или «лучниками».</p>
-              <p className='about_info-text'>Если верить ученым, лук были изобретен в конце палеолита и начале мезолита. Самые старые свидетельства его применения в Европе нашли в Стелморе в Оренбургской долине, что к северу от Гамбурга (Германия). Была установлена дата.</p>
+              <h2>{t('aboutRules')}</h2>
+              <p className='about_info-text'>{t('aboutInfoText3')}</p>
+              <p className='about_info-text'>{t('aboutInfoText4')}</p>
             </div>
             <div className='about_info'>
               <img src={AboutImg3} alt="img" />
-              <h2>Правила стрельбы из лука</h2>
-              <p className='about_info-text'>В помещении стрельба ведется с расстояний в 18, 30 или 50 метров (для мужчин и женщин). На открытом воздухе расстояние до мишеней составляет 30, 50, 70 и 90 метров для мужчин и 30, 50, 60 и 70 метров для женщин. На Олимпийских играх стрельба из лука ведется только с расстояния 70 метров.</p> <br />
-              <p className='about_info-text'>Соревнования по стрельбе из лука проводятся как на открытом воздухе, так и в помещении. Стрельба на соревнованиях ведется сериями по 3 или 6 стрел. По стандартам FITA на серию из 3 стрел даётся 2 минуты, а на серию из 6 стрел 4 минуты.</p>
+              <h2>{t('aboutRules')}</h2>
+              <p className='about_info-text'>{t('aboutInfoText5')}</p> <br />
+              <p className='about_info-text'>{t('aboutInfoText6')}</p>
             </div>
           </div>
         </div>

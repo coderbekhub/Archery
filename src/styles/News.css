@@ -76,6 +76,11 @@
   line-height: 1.2;
   margin-top: 30px;
   text-transform: capitalize;
+  text-decoration: none;
+}
+
+.all_news:hover {
+  color: #fff;
 }
 
 @media (max-width: 650px) {

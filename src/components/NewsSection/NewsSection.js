@@ -3,63 +3,68 @@ import News_img1 from '../../img/news_img1.jpg'
 import News_img2 from '../../img/news_img2.jpg'
 import News_img4 from '../../img/news_img4.jpg'
 import News_img5 from '../../img/news_img5.jpg'
-// import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { ARCHERY_LANGUAGE } from '../../tools/constants'
-// import { useEffect } from 'react'
-// import { getLanguage, getText } from '../../Locales'
-
+import i18next, { t } from 'i18next'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
 export default function NewsSection() {
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
-  // const toggle = () => setDropdownOpen((prevState) => !prevState);
-
-  // const changeLanguage = (e) => {
-  //   localStorage.setItem(ARCHERY_LANGUAGE, e)
-  //   document.location.reload(true)
-  // }
-
-  // useEffect(() => {
-  //   changeLanguage()
-  // }, [])
+  const {t} = useTranslation()
+  const language = [
+    {
+      code: 'uz',
+      name: 'O‘zbek',
+      country_code: 'uz'
+    },
+    {
+      code: 'ru',
+      name: 'Русский',
+      country_code: 'ru'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb'
+    }
+  ]
 
   return (
     <>
       <section className='news_section'>
         <div className="container">
-          <h2 className='news_title'>Новости</h2>
+          <h2 className='news_title'>{t('news_title')}</h2>
           <div className='news_content'>
             <div className='news_info'>
               <img src={News_img1} alt="news img" />
               <span>21.10.22</span>
-              <h3>Ёш мерганларни саралаб берган қизиқарли беллашув</h3>
-              <p>Қорақалпоғистон Республикаси “Қўриқлаш” бошқармаси ходимлари ташаббуси билан куни кеча Нукус шаҳрида ёшларимизнинг спортга бўлган қизиқишларини янада ошириш, улар орасида соғлом рақобат ва мусобақа муҳитини яратиш, ёш авлодни буюк аждодларимиз каби мард ва жасур, жисмонан бақувват ва ватанпарвар этиб тарбиялаш мақсадида спортнинг камондан отиш тури бўйича ёшлар ўртасида “Қўриқлаш” бошқармаси бошлиғи кубоги  учун мусобақа ўтказилди.</p>
+              <h3> {t('newsInfo-h3')} </h3>
+              <p> {t('newsInfo-p')} </p>
             </div>
             <div className='news_info'>
               <img src={News_img2} alt="news img" />
               <span>08.10.22</span>
-              <h3>"Тўмарис кубоги" иккинчи халқаро турнири якунланди</h3>
-              <p>"Кўҳна ва боқий Самарқанд шаҳрида  камондан отиш бўйича аёллар ўртасида ўтказилган "Тўмарис кубоги" иккинчи халқаро турнири якунланди ва унда Ўзбекистон терма жамоаси II Халқаро "Тўмарис кубоги" соҳиби бўлди.</p>
+              <h3> {t('newsInfo-h3/2')} </h3>
+              <p> {t('newsInfo-p/2')} </p>
             </div>
             <div className='news_info'>
               <img src={News_img2} alt="news img" />
               <span>07.10.22</span>
-              <h3>Завершился международный турнир по стрельбе из лука среди женщин «Кубок Тумарис»,</h3>
-              <p>Завершился международный турнир по стрельбе из лука среди женщин «Кубок Тумарис», который проходил в течение трёх дней в древнем и вечно молодом городе Самарканде. Сборная Узбекистана стала обладателем II Международного «Кубка Тумарис».</p>
+              <h3> {t('newsInfo-h3/3')} </h3>
+              <p> {t('newsInfo-p/3')} </p>
             </div>
             <div className='news_info'>
               <img src={News_img4} alt="news img" />
               <span>22.08.22</span>
-              <h3>"Алпомиш ва Барчиной" халқаро турнири олдидан матбуот анжумани</h3>
-              <p>Бугун пойтахтимиздаги Олимпия захиралар коллежида спортнинг Камондан отиш тури бўйича профессионал спортчилар ўртасидаги "Алпомиш ва Барчиной" номли халқаро турнири муносабати билан ОАВ вакиллари ҳамда халқаро экспертлар иштирокида матбуот анжумани бўлиб ўтди.</p>
+              <h3> {t('newsInfo-h3/4')} </h3>
+              <p> {t('newsInfo-p/4')} </p>
             </div>
             <div className='news_info'>
               <img src={News_img5} alt="news img" />
               <span>20.08.22</span>
-              <h3>"Алпомиш ва Барчиной" халқаро турнири бўлиб ўтади</h3>
-              <p>Жорий йилнинг 22-26 август кунлари пойтахтимиздаги Олимпия захиралар коллежида спортнинг Камондан отиш тури бўйича профессионал спортчилар ўртасида</p>
+              <h3> {t('newsInfo-h3/5')} </h3>
+              <p> {t('newsInfo-p/5')} </p>
             </div>
           </div>
-          <Link to='/allnews' className='all_news' href="#">все новости</Link>
+          <Link to='/allnews' className='all_news' href="#">{t('newsInfo-AllNews')}</Link>
         </div>
       </section>
     </>

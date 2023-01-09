@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa'
 // FaTimes
+import i18next, { t } from 'i18next'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
+import App from '../../App';
 import { useRef } from 'react'
 import {
   Dropdown,
@@ -15,8 +19,25 @@ import {
 } from 'reactstrap';
 
 export default function Navbar(props) {
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
-  // const toggle = () => setDropdownOpen((prevState) => !prevState);
+  const {t} = useTranslation()
+  const language = [
+    {
+      code: 'uz',
+      name: 'O‘zbek',
+      country_code: 'uz'
+    },
+    {
+      code: 'ru',
+      name: 'Русский',
+      country_code: 'ru'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb'
+    }
+  ]
+
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const toggle2 = () => setDropdownOpen2((prevState) => !prevState);
 
@@ -40,10 +61,10 @@ export default function Navbar(props) {
             </button> */}
             
             <ul className="nav_list">
-              <li><Link to="/" className="nav_link" onClick={showNavbar}>Главная</Link></li>
-              <li><Link to="/federation" className="nav_link" onClick={showNavbar}>НАША ФЕДЕРАЦИЯ</Link></li>
-              <li><Link to="/gallery" className="nav_link" onClick={showNavbar}>ГАЛЕРЕЯ</Link></li>
-              <li><Link to="/competition" className="nav_link" onClick={showNavbar}>СОРЕВНОВАНИЯ</Link></li>
+              <li><Link to="/" className="nav_link" onClick={showNavbar}>{t('nav_home')}</Link></li>
+              <li><Link to="/federation" className="nav_link" onClick={showNavbar}>{t('nav_ourFederation')}</Link></li>
+              <li><Link to="/gallery" className="nav_link" onClick={showNavbar}>{t('nav_gallery')}</Link></li>
+              <li><Link to="/competition" className="nav_link" onClick={showNavbar}>{t('nav_competition')}</Link></li>
               {/* <li>
               <Link className="nav_link">
                 <Dropdown isOpen={dropdownOpen} toggle={toggle} {...props}>
@@ -78,18 +99,18 @@ export default function Navbar(props) {
                 <Dropdown isOpen={dropdownOpen2} toggle={toggle2} {...props}>
                   <DropdownToggle caret>
                   <Link to="/news" className="drop">
-                    НОВОСТИ
+                    {t('nav_news')}
                   </Link>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem><Link to='/intervu' className='records' onClick={showNavbar}>Интервью</Link></DropdownItem>
+                    <DropdownItem><Link to='/intervu' className='records' onClick={showNavbar}>{t('nav_interview')}</Link></DropdownItem>
                     {/* <DropdownItem><Link to='/photo' className='records'>Фото</Link></DropdownItem> */}
-                    <DropdownItem><Link to='/video'  className='records' onClick={showNavbar}>Видео</Link></DropdownItem>
-                    <DropdownItem><Link to='/training' className='records' onClick={showNavbar}>Учебно-тренировичные сборы</Link></DropdownItem>
+                    <DropdownItem><Link to='/video'  className='records' onClick={showNavbar}>{t('nav_video')}</Link></DropdownItem>
+                    <DropdownItem><Link to='/training' className='records' onClick={showNavbar}>{t('nav_TrainingCamps')}</Link></DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </li>
-              <li><Link to="/contacts" className="nav_link" onClick={showNavbar}>КОНТАКТЫ</Link></li>
+              <li><Link to="/contacts" className="nav_link" onClick={showNavbar}>{t('nav_contacts')}</Link></li>
             </ul>
           </nav>
         </div>

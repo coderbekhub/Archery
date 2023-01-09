@@ -22,26 +22,8 @@ import Video from './components/Pages/NewsPage/Video';
 import Training from './components/Pages/NewsPage/Training';
 // import Physicaltraining from './components/Pages/FactsPage/Physicaltraining'
 // import Photo from './components/Pages/NewsPage/Photo';
-// import { useTranslation } from 'react-i18next';
 
 function App() {
-  const language = [
-    {
-      code: 'uz',
-      name: 'O‘zbek',
-      country_code: 'uz'
-    },
-    {
-      code: 'ru',
-      name: 'Русский',
-      country_code: 'ru'
-    },
-    {
-      code: 'en',
-      name: 'English',
-      country_code: 'gb'
-    }
-  ]
   return (
     <BrowserRouter>
       <div className='App'>

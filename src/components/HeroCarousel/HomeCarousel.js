@@ -1,4 +1,3 @@
-// import React, { useState, useRef } from 'react'
 import '../../styles/HomeCarousel.css'
 import '../../global.css'
 import "swiper/css";
@@ -6,20 +5,29 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Parallax, Pagination, Navigation } from "swiper";
-// import { ARCHERY_LANGUAGE } from '../../tools/constants'
-// import { getLanguage, getText } from '../../Locales'
-// import { useEffect } from 'react'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next'
 
 export default function HomeCarousel() {
-  // const changeLanguage = (e) => {
-  //   localStorage.setItem(ARCHERY_LANGUAGE, e)
-  //   document.location.reload(true)
-  // }
-
-  // useEffect(() => {
-  //   changeLanguage()
-  // }, [])
-
+  const {t} = useTranslation()
+  const language = [
+    {
+      code: 'uz',
+      name: 'O‘zbek',
+      country_code: 'uz'
+    },
+    {
+      code: 'ru',
+      name: 'Русский',
+      country_code: 'ru'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb'
+    }
+  ]
   return (
     <>
       <section className='home_section'>
@@ -49,13 +57,9 @@ export default function HomeCarousel() {
           </div>
           <div className="text" data-swiper-parallax="-100">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+              {t('heroCarousel1')}
+              {t('heroCarousel1')}
+              {t('heroCarousel1')}
             </p>
           </div>
         </SwiperSlide>
@@ -65,13 +69,9 @@ export default function HomeCarousel() {
           </div>
           <div className="text" data-swiper-parallax="-100">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            {t('heroCarousel2')}
+            {t('heroCarousel2')}
+            {t('heroCarousel2')}
             </p>
           </div>
         </SwiperSlide>
@@ -81,13 +81,9 @@ export default function HomeCarousel() {
           </div>
           <div className="text" data-swiper-parallax="-100">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            {t('heroCarousel3')}
+            {t('heroCarousel3')}
+            {t('heroCarousel3')}
             </p>
           </div>
         </SwiperSlide>
