@@ -171,9 +171,21 @@
   padding: 2px 0 2px 0;
 }
 
+/* .drop_toggle {
+  position: fixed;
+  top: 35px;
+  right: 100px;
+} */
+
 /* MEDIA START WIDTH 900px */
 
 @media (max-width: 900px) {
+  .drop_toggle {
+    position: fixed;
+    top: 7px;
+    right: 100px;
+  }
+
   .dropdown2 {
     position: fixed;
     right: 100px;
@@ -217,6 +229,13 @@
     display: flex;
     text-align: center;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .drop_toggle {
+    position: fixed;
+    right: 50px;
   }
 }
 

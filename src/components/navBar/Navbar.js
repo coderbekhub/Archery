@@ -6,10 +6,7 @@ import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa'
 // FaTimes
-import i18next, { t } from 'i18next'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-import App from '../../App';
 import { useRef } from 'react'
 import {
   Dropdown,
