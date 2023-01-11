@@ -66,7 +66,7 @@ export default function OurAthletes() {
               </div>
             </div>
           </div>
-          <Link to='/seemore' className='see_more' href="#">see more</Link>
+          <Link to='/seemore' className='see_more' href="#">{t('seeMore')}</Link>
         </div>
       </section>
     </>

@@ -1,8 +1,28 @@
 import React from 'react'
 import '../../styles/Footer.css'
 import ToTop from '../ToTop'
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const {t} = useTranslation()
+  const language = [
+    {
+      code: 'uz',
+      name: 'O‘zbek',
+      country_code: 'uz'
+    },
+    {
+      code: 'ru',
+      name: 'Русский',
+      country_code: 'ru'
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb'
+    }
+  ]
+
   return (
     <>
       <footer id='site_footer'>
@@ -18,10 +38,10 @@ export default function Footer() {
             </div>
             <div className='footer_infos'>
               <a className='phone_num' href="tel:+998909796568">Tel: +998909796568</a>
-              <h2>Федерация Стрельбы из Лука Узбекистана</h2>
+              <h2>{t('site_name')}</h2>
               <a className='gmail' href="uaf.office@gmail.com">uaf.office@gmail.com</a>
             </div>
-            <h2 className='created'>Created by <a className='create_link' href="https://github.com/coderbekhub" target={'_blank'}>CoderBek</a></h2>
+            <h2 className='created'> {t('created')} <a className='create_link' href="https://github.com/coderbekhub" target={'_blank'}>CoderBek</a></h2>
           </div>
         </section>
       </footer>
