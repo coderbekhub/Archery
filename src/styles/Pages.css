@@ -585,6 +585,7 @@
   font-weight: 500;
   font-family: 'Book Antiqua', palatino;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .contact_content a span {

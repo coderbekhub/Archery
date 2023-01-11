@@ -83,5 +83,13 @@
   "fmaleList/li": "Abdusattorova Ziyodaxon",
   "fmaleList/li2": "Yunusova Kamola",
   "fmaleList/li3": "Toshmatova Guljaxon",
-  "fmaleList/li4": "Soldatenko Anastasiya"
+  "fmaleList/li4": "Soldatenko Anastasiya",
+
+  "competitionMonth": "May",
+  "competitionCity": "Toshkent",
+
+  "contactContent/h1": "Kontaktlar",
+  "contactContent/p": "Toshkent shahri, Chilonzor tumani, Foziltepa ko‘chasi, 38-uy",
+  "contactContent/tell": "Tel:",
+  "contactContent/email": "Email:"
 }

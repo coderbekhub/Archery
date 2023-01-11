@@ -77,5 +77,13 @@
   "fmaleList/li": "Abdusattarova Ziyodakhon",
   "fmaleList/li2": "Yunusova Kamola",
   "fmaleList/li3": "Toshmatova Gulzhakhon",
-  "fmaleList/li4": "Soldatenko Anastasia"
+  "fmaleList/li4": "Soldatenko Anastasia",
+
+  "competitionMonth": "May",
+  "competitionCity": "Tashkent",
+
+  "contactContent/h1": "Contacts",
+  "contactContent/p": "Tashkent city, Chilanzar district, Foziltepa street, house 38",
+  "contactContent/tell": "Tel:",
+  "contactContent/email": "Email:"
 }

@@ -76,5 +76,13 @@
   "fmaleList/li": "Абдусаттарова Зиёдахон",
   "fmaleList/li2": "Юнусова Камола",
   "fmaleList/li3": "Тошматова Гулжаҳон",
-  "fmaleList/li4": "Солдатенко Анастасия"
+  "fmaleList/li4": "Солдатенко Анастасия",
+
+  "competitionMonth": "Май",
+  "competitionCity": "Ташкент",
+
+  "contactContent/h1": "Контакты",
+  "contactContent/p": "Город Ташкент, Чиланзарский район, улица Фозилтепа, дом 38",
+  "contactContent/tell": "Тел:",
+  "contactContent/email": "Электронная почта:"
 }
